@@ -1,0 +1,193 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ADD_EVENT_ICON      ICON                    "icons\\icons8-alarm-32.ico"
+
+IDI_CALENDAR            ICON                    "icons\\icons8-weekend-32.ico"
+
+IDI_DELETE_ICON         ICON                    "icons\\icons8-delete-32.ico"
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ADD_EVENT           ICON                    "icons\\icons8-alarm-clock-32.ico"
+
+IDI_ADD_TASK            ICON                    "icons\\icons8-task-32.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 503, 342
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calendar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,3,489,29,BS_FLAT
+    PUSHBUTTON      "",IDC_ADD_TASK,37,9,24,20,BS_ICON | BS_FLAT | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_ADD_EVENT,11,9,24,20,BS_ICON
+    GROUPBOX        "",IDC_CALENDAR_STATIC,7,35,489,300,BS_FLAT
+END
+
+IDD_ADD_EVENT_DIALOG DIALOGEX 0, 0, 243, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Event"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Create",IDOK,62,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,125,50,14
+    CONTROL         "",IDC_STARTTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | WS_TABSTOP | 0x8,70,39,100,15
+    CONTROL         "",IDC_ENDTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | WS_TABSTOP | 0x8,70,59,100,15
+    LTEXT           "Start",IDC_STATIC,45,42,20,8
+    LTEXT           "End",IDC_STATIC,45,62,20,8
+    EDITTEXT        IDC_EVENT_DESCRIPTION,70,78,158,32,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EVENT_NAME,70,20,139,14,ES_AUTOHSCROLL
+    LTEXT           "Event name",IDC_STATIC,27,22,42,8
+    LTEXT           "Description",IDC_STATIC,27,79,37,10
+END
+
+IDD_LIST_EVENTS_DIALOG DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Events"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,130,155,50,14
+    CONTROL         "",IDC_EVENT_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,23,295,123
+    PUSHBUTTON      "",IDC_DELETE_EVENT,7,7,20,16,BS_ICON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 496
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+
+    IDD_ADD_EVENT_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_LIST_EVENTS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MAIN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ADD_EVENT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LIST_EVENTS_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
